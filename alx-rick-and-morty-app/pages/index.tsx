@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   });
 
   useEffect(() => {
-    refetch({ page }); // Refetch data when the page state changes
+    refetch({ page }); 
   }, [page, refetch]);
 
   if (loading) return (
@@ -41,13 +41,13 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {results && results.map(({ id, name, air_date, episode }: EpisodeProps) => (
             <EpisodeCard
-              id={id}
-              name={name}
-              air_date={air_date}
-              episode={episode}
-              key={id} // Use the unique id for the key
-            />
-          ))}
+             id={id}
+             name={name}
+             air_date={air_date}
+             episode={episode}
+             key={id} 
+             /> 
+            ))} 
         </div>
 
         <div className="flex justify-between mt-6">

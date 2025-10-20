@@ -1,8 +1,8 @@
-interface InfoProps {
-    pages: number
-    next: number
-    prev: number
-    count: number
+export interface InfoProps {
+  pages: number
+  next: number
+  prev: number
+  count: number
 }
 
 export interface EpisodeProps {
